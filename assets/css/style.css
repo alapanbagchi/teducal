@@ -260,6 +260,8 @@ p {
 
 .p-relative {
   position: relative;
+	max-height: 240px;
+
 }
 
 .p-absolute {
