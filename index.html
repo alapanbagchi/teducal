@@ -38,13 +38,20 @@
     <!-- Add your site or application content here -->
 
     <!-- pre loader area start -->
-    <div id="loading" style="display: none;">
+    <div id="loading">
       <div id="loading-center">
          <div id="loading-center-absolute">
-            <div class="loading-content">
-               <img class="loading-logo-text" src="assets/img/logo/logo-text-2.png" alt="">
-               <div class="loading-stroke">
-                  <img class="loading-logo-icon" src="assets/img/logo/logo-icon.png" alt="">
+            <div style="text-align:center" class="loading-content">
+               <img style="padding-bottom: 10px;" class="loading-logo-text" src="assets/img/logo/logo-text-2.png" alt="">
+               <div style="position: relative;width: 100%;background: #2b4eff;height: 3px;" class="loading-stroke">
+                  <img style="position: absolute;
+                  top: -60px;
+                  left: 0;
+                  width: 60px;
+                  height: 60px;
+                  animation: eucal-loading 5s linear infinite;
+                      animation-timing-function: linear;
+                  animation-timing-function: cubic-bezier(.75, .04,0,.86);" class="loading-logo-icon" src="assets/img/logo/logo-icon.png" alt="">
                </div>
             </div>
          </div>
@@ -932,6 +939,7 @@
                 col-xxl-4 col-xl-4 col-lg-4 col-md-6
                 grid-item
                 cat3
+                cat0
               "
             >
               <div class="course__item white-bg mb-30 fix">
