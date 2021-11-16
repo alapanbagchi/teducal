@@ -106,7 +106,7 @@
                         </ul>
                       </li> -->
                       <li>
-                        <a href="course-grid.html">Courses</a>
+                        <a href="../course-grid.html">Courses</a>
                         <!-- <ul class="submenu">
                           <li><a href="course-grid.html">Courses</a></li>
                           <li><a href="course-list.html">Course List</a></li>
@@ -127,8 +127,8 @@
                             <a href="instructor-details.html"
                               >Instructor Details</a
                             >
-                          </li>
-                          <li>
+                          </li> -->
+                          <!-- <li>
                             <a href="event-details.html">Event Details</a>
                           </li>
                           <li><a href="cart.html">My Cart</a></li>
@@ -170,6 +170,76 @@
     <!-- cart mini area start -->
     <!-- cart mini area end -->
     <!-- sidebar area start -->
+    <div class="sidebar__area sidebar">
+      <div class="sidebar__wrapper">
+         <div class="sidebar__close">
+            <button class="sidebar__close-btn" id="sidebar__close-btn">
+            <span><i class="fal fa-times"></i></span>
+            <span>close</span>
+            </button>
+         </div>
+         <div class="sidebar__content">
+            <div class="logo mb-40">
+               <a href="index.html">
+               <img src="assets/img/logo/logo.png" alt="logo">
+               </a>
+            </div>
+            <div class="mobile-menu fix mean-container">
+              <!-- <div class="mean-bar"><a href="#nav" class="meanmenu-reveal" style="right: 0px; left: auto; display: inline;"><span><span><span></span></span></span></a><nav class="mean-nav">
+                           <!-- <ul style="display: none;">
+                              <li class="has-dropdown">
+                                 <a href="index.html">Home</a>
+                                 <ul class="submenu" style="display: none;">
+                                    <li><a href="index.html">Home Style 1</a></li>
+                                    <li><a href="index-2.html">Home Style 2</a></li>
+                                    <li><a href="index-3.html">Home Style 3</a></li>
+                                 </ul>
+                              <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></li>
+                              <li class="has-dropdown">
+                                 <a href="course-grid.html">Courses</a>
+                                 <ul class="submenu" style="display: none;">
+                                    <li><a href="course-grid.html">Courses</a></li>
+                                    <li><a href="course-list.html">Course List</a></li>
+                                    <li><a href="course-sidebar.html">Course sidebar</a></li>
+                                    <li><a href="course-details.html">Course Details</a></li>
+                                 </ul>
+                              <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></li>
+                              <li class="has-dropdown">
+                                 <a href="blog.html">Blog</a>
+                                 <ul class="submenu" style="display: none;">
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                 </ul>
+                              <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></li>
+                              <li class="has-dropdown">
+                                 <a href="course-grid.html">Pages</a>
+                                 <!-- <ul class="submenu" style="display: none;">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="instructor.html">Instructor</a></li>
+                                    <li><a href="instructor-details.html">Instructor Details</a></li>
+                                    <li><a href="event-details.html">Event Details</a></li>
+                                    <li><a href="cart.html">My Cart</a></li>
+                                    <li><a href="wishlist.html">My Wishlist</a></li>
+                                    <li><a href="checkout.html">checkout</a></li>
+                                    <li><a href="sign-in.html">Sign In</a></li>
+                                    <li><a href="sign-up.html">Sign Up</a></li>
+                                    <li><a href="error.html">Error</a></li>
+                                 </ul> -->
+                              <!-- <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></li>
+                              <li class="mean-last"><a href="contact.html">Contact</a></li> -->
+                           </ul> 
+                        </nav></div></div> 
+
+            <div class="sidebar__search p-relative mt-40 ">
+               <form action="#">
+                  <input type="text" placeholder="Search...">
+                  <button type="submit"><i class="fad fa-search"></i></button>
+               </form>
+            </div>
+            
+         </div>
+      </div>
+   </div>
     <!-- sidebar area end -->
     <!-- sidebar area end -->
 
@@ -633,9 +703,10 @@
             <div style="width:100%;justify-content:flex-start">
               <div class="course__menu d-flex justify-content-lg-space-between mb-60">
                 <div class="masonary-menu filter-button-group">
-                  <button class="active" data-filter="*">
+                  <button class="active" data-filter=".cat0">
                     See All
                   </button>
+                  <button data-filter=".cat1">Coding</button>
                   <button data-filter=".cat2">Language Tutoring</button>
                   <button data-filter=".cat3">Art & Design</button>
                   <button data-filter=".cat4">Translation Services</button>
@@ -653,6 +724,7 @@
                 col-xxl-4 col-xl-4 col-lg-4 col-md-6
                 grid-item
                 cat2
+                cat0
               "
             >
               <div class="course__item white-bg mb-30 fix">
@@ -717,9 +789,213 @@
                 </div>
               </div>
             </div>
-           
-           
-            
+            <div
+              class="
+                col-xxl-4 col-xl-4 col-lg-4 col-md-6
+                grid-item
+                cat2
+              "
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <div class="course__thumb w-img p-relative fix">
+                  <a href="courses/chinese-conversation-practice.html">
+                    <img src="assets/img/chinese-conversation-practice.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Language Tutoring</a>
+                  </div>
+                </div>
+                <div class="course__content">
+                  <div
+                    class="
+                      course__meta
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div>
+                    <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a href="courses/chinese-conversation-practice.html"
+                      >Conversation Practice</a
+                    >
+                  </h3>
+                  <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <a href="profiles/yishan-details.html">
+                      <img
+                        src="assets/img/yishan.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6>Yishan</a></h6>
+                  </div>
+                </div>
+                <div
+                  class="
+                    course__more
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                  "
+                >
+                  <div class="course__status">
+                    <span>$24/hr</span>
+                  </div>
+                  <div class="course__btn">
+                    <a href="courses/chinese-conversation-practice.html" class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                col-xxl-4 col-xl-4 col-lg-4 col-md-6
+                grid-item
+                cat2
+              "
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <div class="course__thumb w-img p-relative fix">
+                  <a href="courses/chinese-homework-help.html">
+                    <img src="assets/img/chinese-homework-help.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Language Tutoring</a>
+                  </div>
+                </div>
+                <div class="course__content">
+                  <div
+                    class="
+                      course__meta
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div>
+                    <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a href="courses/chinese-homework-help.html"
+                      >Homework Help</a
+                    >
+                  </h3>
+                  <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <a href="profiles/yishan-details.html">
+                      <img
+                        src="assets/img/yishan.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6>Yishan</a></h6>
+                  </div>
+                </div>
+                <div
+                  class="
+                    course__more
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                  "
+                >
+                  <div class="course__status">
+                    <span>$24/hr</span>
+                  </div>
+                  <div class="course__btn">
+                    <a href="courses/chinese-homework-help.html" class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                col-xxl-4 col-xl-4 col-lg-4 col-md-6
+                grid-item
+                cat3
+              "
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <div class="course__thumb w-img p-relative fix">
+                  <a href="courses/landscapes.html">
+                    <img src="assets/img/course/landscapes.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art</a>
+                  </div>
+                </div>
+                <div class="course__content">
+                  <div
+                    class="
+                      course__meta
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div>
+                    <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a href="courses/landscapes.html"
+                      >Landscapes</a
+                    >
+                  </h3>
+                  <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <a href="profiles/tatyana-details.html">
+                      <img
+                        src="assets/img/tatiyana.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6>Tatyana</a></h6>
+                  </div>
+                </div>
+                <div
+                  class="
+                    course__more
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                  "
+                >
+                  <div class="course__status">
+                    <span>$30/hr</span>
+                  </div>
+                  <div class="course__btn">
+                    <a href="courses/landscapes.html" class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div
               class="
                 col-xxl-4 col-xl-4 col-lg-4 col-md-6
@@ -789,7 +1065,282 @@
                 </div>
               </div>
             </div>
-            
+            <div
+              class="
+                col-xxl-4 col-xl-4 col-lg-4 col-md-6
+                grid-item
+                cat3
+              "
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <div class="course__thumb w-img p-relative fix">
+                  <a href="course/linear-perspective.html">
+                    <img src="assets/img/course/linear-perspective.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art</a>
+                  </div>
+                </div>
+                <div class="course__content">
+                  <div
+                    class="
+                      course__meta
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div>
+                    <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a href="courses/linear-perspective.html"
+                      >Linear Perspective</a
+                    >
+                  </h3>
+                  <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <a href="profiles/tatyana-details.html">
+                      <img
+                        src="assets/img/tatiyana.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6>Tatyana</a></h6>
+                  </div>
+                </div>
+                <div
+                  class="
+                    course__more
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                  "
+                >
+                  <div class="course__status">
+                    <span>$20/hr</span>
+                  </div>
+                  <div class="course__btn">
+                    <a href="courses/linear-perspective.html" class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                col-xxl-4 col-xl-4 col-lg-4 col-md-6
+                grid-item
+                cat3
+              "
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <div class="course__thumb w-img p-relative fix">
+                  <a href="courses/portraits.html">
+                    <img src="assets/img/course/portraits.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art</a>
+                  </div>
+                </div>
+                <div class="course__content">
+                  <div
+                    class="
+                      course__meta
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div>
+                    <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a href="courses/portraits.html"
+                      >Portraits</a
+                    >
+                  </h3>
+                  <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <a href="profiles/tatyana-details.html">
+                      <img
+                        src="assets/img/tatiyana.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6>Tatyana</a></h6>
+                  </div>
+                </div>
+                <div
+                  class="
+                    course__more
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                  "
+                >
+                  <div class="course__status">
+                    <span>$30/hr</span>
+                  </div>
+                  <div class="course__btn">
+                    <a href="chinese-homework-help.html" class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                col-xxl-4 col-xl-4 col-lg-4 col-md-6
+                grid-item
+                cat3
+              "
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <div class="course__thumb w-img p-relative fix">
+                  <a href="courses/animals.html">
+                    <img src="assets/img/course/animals.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art</a>
+                  </div>
+                </div>
+                <div class="course__content">
+                  <div
+                    class="
+                      course__meta
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div>
+                    <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a href="courses/animals.html"
+                      >Animals</a
+                    >
+                  </h3>
+                  <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <a href="profiles/tatyana-details.html">
+                      <img
+                        src="assets/img/tatiyana.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6>Tatyana</a></h6>
+                  </div>
+                </div>
+                <div
+                  class="
+                    course__more
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                  "
+                >
+                  <div class="course__status">
+                    <span>$30/hr</span>
+                  </div>
+                  <div class="course__btn">
+                    <a href="courses/animals.html" class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                col-xxl-4 col-xl-4 col-lg-4 col-md-6
+                grid-item
+                cat3
+              "
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <div class="course__thumb w-img p-relative fix">
+                  <a href="courses/custom-artwork-help.html">
+                    <img src="assets/img/course/custom-artwork-help.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art</a>
+                  </div>
+                </div>
+                <div class="course__content">
+                  <div
+                    class="
+                      course__meta
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div>
+                    <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a href="courses/custom-artwork-help.html"
+                      >Custom/Artwork Help</a
+                    >
+                  </h3>
+                  <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <a href="profiles/tatyana-details.html">
+                      <img
+                        src="assets/img/tatiyana.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6>Tatyana</a></h6>
+                  </div>
+                </div>
+                <div
+                  class="
+                    course__more
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                  "
+                >
+                  <div class="course__status">
+                    <span>$30/hr</span>
+                  </div>
+                  <div class="course__btn">
+                    <a href="courses/custom-artwork-help.html" class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
       </section>
       <!-- course area end -->
 
